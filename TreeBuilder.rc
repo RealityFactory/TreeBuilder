@@ -1,0 +1,466 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TreeBuilder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TreeBuilder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TREEBUILDER_DIALOG DIALOGEX 0, 0, 600, 406
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Conversation Script Generator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_CONVLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,13,324,320,62
+    GROUPBOX        "Conversation Text",IDC_STATIC,7,312,381,80
+    PUSHBUTTON      "Add",IDC_ADDCONV,342,323,40,12
+    PUSHBUTTON      "Delete",IDC_DELCONV,342,340,40,12
+    PUSHBUTTON      "Save",IDC_SAVECONV,342,374,40,12
+    PUSHBUTTON      "Edit",IDC_EDITCONV,342,357,40,12
+    CTEXT           "Conversation Name",IDC_STATIC,117,192,64,10,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Condtional Tests",IDC_STATIC,105,15,266,173
+    GROUPBOX        "Modifications",IDC_STATIC,370,15,223,173
+    GROUPBOX        "",IDC_STATIC,135,44,81,16,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,138,48,31,10
+    CONTROL         "False",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,168,48,33,
+                    10
+    EDITTEXT        IDC_EDITFLAG1,114,48,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Flag #",IDC_STATIC,113,30,22,11,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,134,63,81,25,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,138,75,31,10
+    CONTROL         "False",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,168,75,33,
+                    10
+    EDITTEXT        IDC_EDITFLAG2,114,75,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,134,90,81,25,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,138,103,31,10
+    CONTROL         "False",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,168,103,
+                    33,10
+    EDITTEXT        IDC_EDITFLAG3,114,103,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,134,118,81,25,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,138,130,31,10
+    CONTROL         "False",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,168,130,
+                    33,10
+    EDITTEXT        IDC_EDITFLAG4,114,130,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Attribute",IDC_STATIC,243,30,27,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITATTR1,231,48,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL1,335,48,25,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,286,36,50,34,NOT WS_VISIBLE
+    CONTROL         "=",IDC_RADIOEQ1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    287,42,20,10
+    CONTROL         "!=",IDC_RADIONEQ1,"Button",BS_AUTORADIOBUTTON,310,42,22,
+                    10
+    CONTROL         ">",IDC_RADIOGT1,"Button",BS_AUTORADIOBUTTON,287,55,20,
+                    10
+    CONTROL         "<",IDC_RADIOLT1,"Button",BS_AUTORADIOBUTTON,311,55,20,
+                    10
+    EDITTEXT        IDC_EDITATTR2,231,75,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL2,335,75,25,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,285,62,50,34,NOT WS_VISIBLE
+    CONTROL         "=",IDC_RADIOEQ2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    287,68,20,10
+    CONTROL         "!=",IDC_RADIONEQ2,"Button",BS_AUTORADIOBUTTON,310,68,22,
+                    10
+    CONTROL         ">",IDC_RADIOGT2,"Button",BS_AUTORADIOBUTTON,287,81,20,
+                    10
+    CONTROL         "<",IDC_RADIOLT2,"Button",BS_AUTORADIOBUTTON,311,81,20,
+                    10
+    LTEXT           "On Failure Go To Conversation Name",IDC_STATIC,157,152,
+                    123,11,SS_CENTERIMAGE
+    LTEXT           "Amount",IDC_STATIC,336,30,28,9,SS_CENTERIMAGE
+    LTEXT           "State",IDC_STATIC,158,31,24,11,SS_CENTERIMAGE
+    LTEXT           "Test",IDC_STATIC,299,30,19,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITATTR6,231,103,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL6,335,103,25,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,285,90,50,34,NOT WS_VISIBLE
+    CONTROL         "=",IDC_RADIOEQ3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    286,96,20,10
+    CONTROL         "!=",IDC_RADIONEQ3,"Button",BS_AUTORADIOBUTTON,309,96,22,
+                    10
+    CONTROL         ">",IDC_RADIOGT3,"Button",BS_AUTORADIOBUTTON,286,110,20,
+                    10
+    CONTROL         "<",IDC_RADIOLT3,"Button",BS_AUTORADIOBUTTON,310,110,20,
+                    10
+    EDITTEXT        IDC_EDITATTR7,231,129,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL7,335,129,25,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,285,116,50,34,NOT WS_VISIBLE
+    CONTROL         "=",IDC_RADIOEQ4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    286,122,20,10
+    CONTROL         "!=",IDC_RADIONEQ4,"Button",BS_AUTORADIOBUTTON,309,122,
+                    22,10
+    CONTROL         ">",IDC_RADIOGT4,"Button",BS_AUTORADIOBUTTON,286,135,20,
+                    10
+    CONTROL         "<",IDC_RADIOLT4,"Button",BS_AUTORADIOBUTTON,310,135,20,
+                    10
+    GROUPBOX        "",IDC_STATIC,399,44,81,16,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,403,48,31,10
+    CONTROL         "False",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,433,48,33,
+                    10
+    EDITTEXT        IDC_EDITFLAG5,378,48,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Flag #",IDC_STATIC,377,29,22,11,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,399,62,81,25,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,403,75,31,10
+    CONTROL         "False",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,433,75,33,
+                    10
+    EDITTEXT        IDC_EDITFLAG6,379,75,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,399,90,81,25,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG7,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,403,103,31,10
+    CONTROL         "False",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,433,103,
+                    33,10
+    EDITTEXT        IDC_EDITFLAG7,379,102,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,399,117,81,25,NOT WS_VISIBLE
+    CONTROL         "True",IDC_RADIOFLAG8,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,403,130,31,10
+    CONTROL         "False",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,433,130,
+                    33,10
+    EDITTEXT        IDC_EDITFLAG8,379,129,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Attribute",IDC_STATIC,507,29,27,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITATTR3,495,48,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL3,556,48,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITATTR4,495,75,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL4,556,75,25,12,ES_AUTOHSCROLL
+    LTEXT           "Amount",IDC_STATIC,554,29,28,9,SS_CENTERIMAGE
+    LTEXT           "State",IDC_STATIC,423,30,24,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITATTR8,495,102,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL8,556,102,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITATTR9,495,129,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVAL9,556,129,25,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_CONLIST1,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,13,33,82,157
+    PUSHBUTTON      "Add Conversation",IDC_ADDCON,17,193,70,16
+    PUSHBUTTON      "Delete Conversation",IDC_DELCON,17,216,70,16
+    LTEXT           "Pawn Speak Text",IDC_STATIC,120,227,62,11,
+                    SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,106,219,88,93
+    COMBOBOX        IDC_SPEAK,116,242,70,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Player Reply Text",IDC_STATIC,218,202,60,11
+    COMBOBOX        IDC_REPLY1,212,216,69,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Conversation Name",IDC_STATIC,213,234,67,11,
+                    SS_CENTERIMAGE
+    CONTROL         "Conversation Exit",IDC_REPLYEXIT1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,214,269,71,11
+    GROUPBOX        "Reply",IDC_STATIC,200,189,90,97
+    LTEXT           "Player Reply Text",IDC_STATIC,313,202,60,11
+    COMBOBOX        IDC_REPLY2,307,216,69,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Conversation Name",IDC_STATIC,308,234,67,11,
+                    SS_CENTERIMAGE
+    CONTROL         "Conversation Exit",IDC_REPLYEXIT2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,309,269,71,11
+    GROUPBOX        "Reply",IDC_STATIC,298,189,90,97
+    LTEXT           "Player Reply Text",IDC_STATIC,410,202,60,11
+    COMBOBOX        IDC_REPLY3,404,216,69,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Conversation Name",IDC_STATIC,405,234,67,11,
+                    SS_CENTERIMAGE
+    CONTROL         "Conversation Exit",IDC_REPLYEXIT3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,406,269,71,11
+    GROUPBOX        "Reply",IDC_STATIC,396,189,90,97
+    LTEXT           "Player Reply Text",IDC_STATIC,510,202,60,11
+    COMBOBOX        IDC_REPLY4,504,216,69,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Conversation Name",IDC_STATIC,505,234,67,11,
+                    SS_CENTERIMAGE
+    CONTROL         "Conversation Exit",IDC_REPLYEXIT4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,506,269,71,11
+    GROUPBOX        "Reply",IDC_STATIC,494,189,90,97
+    LTEXT           "Player Reply Text",IDC_STATIC,412,307,60,11
+    COMBOBOX        IDC_REPLY5,406,321,69,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Conversation Name",IDC_STATIC,407,339,67,11,
+                    SS_CENTERIMAGE
+    CONTROL         "Conversation Exit",IDC_REPLYEXIT5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,408,374,71,11
+    GROUPBOX        "Reply",IDC_STATIC,396,294,90,97
+    LTEXT           "Player Reply Text",IDC_STATIC,510,306,60,11
+    COMBOBOX        IDC_REPLY6,504,320,69,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Conversation Name",IDC_STATIC,505,338,67,11,
+                    SS_CENTERIMAGE
+    CONTROL         "Conversation Exit",IDC_REPLYEXIT6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,506,373,71,11
+    GROUPBOX        "Reply",IDC_STATIC,494,293,90,97
+    PUSHBUTTON      "Load",IDC_LOAD,17,239,70,16
+    PUSHBUTTON      "Save",IDC_SAVE,17,262,70,16
+    PUSHBUTTON      "Make Script",IDC_SCRIPT,17,285,70,16
+    EDITTEXT        IDC_CONAME,110,202,77,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_FAIL,170,166,90,69,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REPLYCON1,212,251,70,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REPLYCON2,307,251,70,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REPLYCON3,404,251,70,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REPLYCON4,504,251,70,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REPLYCON5,406,356,70,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REPLYCON6,504,356,70,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Conversations",IDC_STATIC,7,14,94,293
+    CTEXT           "Scroll Speed",IDC_STATIC,114,265,41,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPEED,157,263,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SOUNDFILE,113,297,57,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_SNDBUTTON,173,297,12,11
+    CTEXT           "Speak Sound File",IDC_STATIC,113,284,73,9,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "Customization",IDC_CUSTOM,201,295,64,15
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 238, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Conversation Text Editing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,112,40,12
+    PUSHBUTTON      "Cancel",IDCANCEL,19,88,40,12
+    EDITTEXT        IDC_NAME,21,34,71,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXT,101,34,117,87,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CTEXT           "Text Name",IDC_STATIC,20,17,73,12,SS_CENTERIMAGE
+    CTEXT           "Text",IDC_STATIC,99,17,121,10,SS_CENTERIMAGE
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 135, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Conversation Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,78,70,50,14
+    LTEXT           "Conversation Name",IDC_STATIC,21,15,92,12
+    EDITTEXT        IDC_CONN,15,36,101,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 260, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customization"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,14,166,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,167,50,14
+    EDITTEXT        IDC_BACK,19,33,75,12,ES_AUTOHSCROLL
+    CTEXT           "Background",IDC_STATIC,19,20,75,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_ICON1,144,33,75,12,ES_AUTOHSCROLL
+    CTEXT           "Icon",IDC_STATIC,144,20,75,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPEAKX,72,61,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Speak X",IDC_STATIC,20,62,42,12,SS_CENTERIMAGE
+    PUSHBUTTON      "..",IDC_BACKBUTTON,101,33,14,12
+    PUSHBUTTON      "..",IDC_ICONBUTTON,226,33,14,12
+    EDITTEXT        IDC_SPEAKY,72,79,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Speak Y",IDC_STATIC,20,79,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPEAKWIDTH,72,97,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Speak Width",IDC_STATIC,20,98,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPEAKHEIGHT,72,114,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Speak Height",IDC_STATIC,20,114,46,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPEAKFONT,72,133,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Speak Font",IDC_STATIC,20,134,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REPLYX,196,94,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reply X",IDC_STATIC,144,95,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REPLYY,196,112,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reply Y",IDC_STATIC,144,113,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REPLYWIDTH,196,130,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reply Width",IDC_STATIC,144,131,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REPLYHEIGHT,196,148,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reply Height",IDC_STATIC,144,148,46,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REPLYFONT,196,166,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reply Font",IDC_STATIC,144,167,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ICONX,196,57,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Icon X",IDC_STATIC,144,58,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ICONY,196,75,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Icon Y",IDC_STATIC,144,76,42,12,SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TreeBuilder MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TreeBuilder\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TreeBuilder.EXE\0"
+            VALUE "ProductName", "TreeBuilder Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TREEBUILDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 399
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TreeBuilder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
